@@ -206,7 +206,7 @@ class Mastermind extends World {
       int currentGuesses = this.allGuesses.length() / this.length;
 
       if (this.exact == this.length) {
-        return this.endOfWorld("You win! It took you " + currentGuesses + " guess(es).");
+        return this.endOfWorld("You win! It took you " + (currentGuesses + 1) + " guess(es).");
       } else if (this.guesses == 0) {
         return this.endOfWorld("You lose!");
       } else {
